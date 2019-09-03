@@ -1,0 +1,58 @@
+Problem #1
+
+Input: 
+
+-	Individual Test Score(s)
+
+Process: 
+
+-	Counter (Increment)
+-	Tally Test Scores
+
+Output: 
+
+-	Average Test Score
+
+
+Pseudocode:
+
+* Initialize Counter
+* While Counter <= 10 (Total # of Test Scores to be computed)
+	- Prompt user to enter test score
+	- Tally Total Test Score(s)
+	- Add 1 to Counter (Increment by 1)
+	- Compute Average Test Score (Total Test Score divided by Counter) [Counter will ultimately be 10]
+
+
+Problem #2
+
+Input: 
+
+- Dimensions of Roof (in feet)
+
+Process:
+
+- Convert Dimensions of Roof into inches
+- Multiply Dimensions of Roof (in inches) by Rainfall (in inches) to 
+  Compute Water Runoff (in cubic inches)
+
+Output:
+
+- Water Runoff (in Gallons)
+
+
+Pseudocode
+
+* Enter Dimensions of Roof (in feet)
+* Convert Dimensions of Roof into inches (Multiply by 12 for each dimension)
+* Enter Inches of Rainfall
+* Compute Water Runoff from roof (in cubic inches) [Multiply Dimensions of Roof (in inches) by Inches of Rainfall]
+* Compute Water Runoff from roof (in gallons) [Divide Water Runoff from roof (in cubic inches) by 231]
+
+
+  
+  
+  
+  
+  
+  
