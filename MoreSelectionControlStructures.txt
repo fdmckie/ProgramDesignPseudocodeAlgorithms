@@ -1,0 +1,112 @@
+Problem #1: Process Customer Record
+
+Input: 
+
+-	Customer Name
+- 	Purchase Amount
+-	Tax Code
+
+Process: 
+
+-	Interpret Tax Code to determine Sales Tax
+-	Compute Taxable Amount
+-	Compute Total Amount Due
+
+Output: 
+
+-	Customer Name
+- 	Purchase Amount
+-	Sales Tax
+-	Total Amount Due
+
+
+
+Pseudocode:
+
+* Read Customer Name
+* Read Purchase Amount
+* Read Tax Code
+
+* from Tax Code, determine Sales Tax:
+	0 - 0.00 Sales Tax (Tax Exempt)
+	1 - 0.03 Sales Tax (State Sales Tax Only)
+	2 - 0.05 Sales Tax (Federal & State Sales Tax)
+	3 - 0.07 Sales Tax (Special Sales Tax)
+	
+* Compute Taxable Amount (Purchase Amount * Sales Tax)
+* Compute Total Amount Due (Purchase Amount + Taxable Amount)
+
+
+* For Output:
+
+* Print Customer Name
+* Print Purchase Amount
+* Print Sales Tax
+* Print Total Amount Due 
+
+
+
+
+Problem #2: Calculate Employee's Pay
+
+
+Input: 
+
+-	Employee Number
+- 	Pay Rate
+-	# of Hours Worked In Week
+
+Process: 
+
+	- Validate Pay Rate
+	- Validate Hours Worked
+	- If Pay Rate or Hours Worked is not validated, do not compute Weekly Pay and print appropriate message
+	- If Pay Rate and Hours Worked is validated
+		- If Hours Worked > 35 hours compute Normal Weekly Pay + Overtime Pay
+		- If Hours Worked < 35 hours compute Normal Weekly Pay
+
+Output:
+
+- 	Employee Number
+- 	Hours Worked
+-	Pay Rate
+-	Weekly Pay for Employee Number
+
+
+
+Pseudocode:
+
+* Read Employee Number
+* Read Pay Rate
+* Read Hours Worked
+
+*	Validate Pay Rate
+*	Vadliate Hours Worked
+		For Validation:
+			-	Maximum Hours Worked (60 hours)
+			-	Maximum Hourly Rate ($25.00/hour)
+		If not Validated (Max. Hours Worked or Maximum Hourly Rate is exceeded):
+			-	Employee Weekly Pay will not be calculated
+			-	Print appropriate message
+		If Validated:
+			- Compute Weekly Pay
+				If Hours Worked <= 35
+					- Weekly Pay = Hours Worked * Pay Rate
+				If Hours Worked > 35
+					- Overtime Pay = (Hours Worked - 35) * (Pay Rate * 1.5)
+					- Weekly Pay = (35 * Pay Rate) + Overtime Pay
+		
+* For Output:
+	* Print Employee Number
+	* Print Hours Worked
+	* Print Pay Rate
+	* Weekly Pay for Employee Number
+					
+					
+
+
+
+
+
+
+	
